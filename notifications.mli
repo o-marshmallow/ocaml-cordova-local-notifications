@@ -60,25 +60,25 @@ module ScheduleOptions : sig
 end
 
 val schedule : ScheduleOptions.t -> unit
-  [@@js.call "cordova.plugins.notification.local.schedule"]
+  [@@js.global "cordova.plugins.notification.local.schedule"]
 
 val schedule_list : ScheduleOptions.t list -> unit
-  [@@js.call "cordova.plugins.notification.local.schedule"]
+  [@@js.global "cordova.plugins.notification.local.schedule"]
 
 val on : event -> (ScheduleOptions.t -> unit) -> unit
-  [@@js.call "cordova.plugins.notification.local.on"]
+  [@@js.global "cordova.plugins.notification.local.on"]
 
 val update : ScheduleOptions.t -> unit
-  [@@js.call "cordova.plugins.notification.local.update"]
+  [@@js.global "cordova.plugins.notification.local.update"]
 
 val update_list : ScheduleOptions.t list -> unit
-  [@@js.call "cordova.plugins.notification.local.update"]
+  [@@js.global "cordova.plugins.notification.local.update"]
 
 val clear : int -> (unit -> unit) -> unit
-  [@@js.call "cordova.plugins.notification.local.clear"]
+  [@@js.global "cordova.plugins.notification.local.clear"]
 
 val clear_list : int list -> (unit -> unit) -> unit
-  [@@js.call "cordova.plugins.notification.local.clear"]
+  [@@js.global "cordova.plugins.notification.local.clear"]
 
 val cancel : int -> (unit -> unit) -> unit
-  [@@js.call "cordova.plugins.notification.local.cancel"]
+  [@@js.global "cordova.plugins.notification.local.cancel"]
